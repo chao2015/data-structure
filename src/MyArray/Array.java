@@ -1,4 +1,4 @@
-package Array;
+package MyArray;
 
 import java.util.Arrays;
 
@@ -180,40 +180,58 @@ public class Array<E> {
     }
 
     public static void main(String[] args) {
-        Array<Integer> arr = new Array<Integer>();
+
+        Array<Integer> arr = new Array<>();
         for (int i = 0; i < 10; i++)
             arr.addLast(i);
         System.out.println(arr);
+        // Array: size = 10, capacity = 10
+        // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         arr.add(1, 100);
         System.out.println(arr);
+        // Array: size = 11, capacity = 20
+        // [0, 100, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         arr.addFirst(-1);
         System.out.println(arr);
-        //[-1, 0, 100, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        // Array: size = 12, capacity = 20
+        // [-1, 0, 100, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         arr.remove(2);
         System.out.println(arr);
+        // Array: size = 11, capacity = 20
+        // [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         arr.removeElement(4);
         System.out.println(arr);
+        // Array: size = 10, capacity = 20
+        // [-1, 0, 1, 2, 3, 5, 6, 7, 8, 9]
 
         arr.removeFirst();
         System.out.println(arr);
+        // Array: size = 9, capacity = 20
+        // [0, 1, 2, 3, 5, 6, 7, 8, 9]
 
         arr.set(8, 1);
         System.out.println(arr);
+        // Array: size = 9, capacity = 20
+        // [0, 1, 2, 3, 5, 6, 7, 8, 1]
+
         int[] result = arr.findAll(1);
         for (int i = 0; i < result.length; i++) {
             System.out.printf("index: %d ", result[i]);
         }
         System.out.println("\n");
+        // index: 1 index: 8
 
         arr.removeAllElement(1);
         System.out.println(arr);
+        // Array: size = 7, capacity = 20
+        // [0, 2, 3, 5, 6, 7, 8]
+
         // java中的泛型不可以是基本数据类型，只能是类对象，可以放包装类
         // boolean, byte, char, short, int, long, float, double
         // Boolean, Byte, Char, Short, Int, Long, Float, Double
     }
-
 }

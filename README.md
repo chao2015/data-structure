@@ -1,4 +1,4 @@
-# Data-Structures
+# data-structures
 The beauty of data structure: building my own data structure by Java.
 
 进度
