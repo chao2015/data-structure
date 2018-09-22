@@ -267,6 +267,47 @@ public class BSTree<E extends Comparable<E>> {
         }
     }
 
+    // 寻找某元素的前驱
+    public void predecessor(E e) {
+
+    }
+
+    // 寻找某元素的后继，就是找输入值的节点的右子树的最小节点
+    public void successor(E e) {
+        if (!contains(e))
+            throw new IllegalArgumentException("Node of e is not in BSTree");
+
+//        return successor(root, e).e;
+    }
+
+    private void preOrder(Node node, E e) {
+
+    }
+
+//    private Node successor(Node node, E e) {
+//
+//    }
+
+    // 在二分搜索树中找到小于某元素的最大元素e，输入元素可以不在二分搜索树中
+    public void floor(E e) {
+
+    }
+
+    // 在二分搜索树中找到大于某元素的最小元素e，输入元素可以不在二分搜索树中
+    public void ceil(E e) {
+
+    }
+
+    // 根据元素获得排名
+    public void rank(E e) {
+
+    }
+
+    // 根据排名获得元素
+    public void select(int rank) {
+
+    }
+
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();

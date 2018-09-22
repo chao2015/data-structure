@@ -54,6 +54,8 @@ public class Test {
         bstree.levelOrder();
         // 5 3 6 2 4 8
 
+//        System.out.println("\nsuccessor: " + bstree.successor(4));
+
         BSTree<Integer> bstree2 = new BSTree<>();
         Random random = new Random();
         int n = 1000;  // 因为add()方法不添加重复元素，所以nums2数组里的数小于1000个
@@ -84,4 +86,5 @@ public class Test {
         }
         System.out.println("removeMax test completed");
     }
+
 }
