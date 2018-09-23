@@ -1,5 +1,7 @@
 package MySet;
 
+import common.FileOperation;
+
 import java.util.ArrayList;
 
 /**
@@ -28,7 +30,7 @@ public class SetTest {
 
     public static void main(String[] args) {
 
-        String filename = "src/MySet/pride-and-prejudice.txt";
+        String filename = "src/common/pride-and-prejudice.txt";
 
         BSTreeSet<String> bsTreeSet = new BSTreeSet<>();
         double time1 = testSet(bsTreeSet, filename);

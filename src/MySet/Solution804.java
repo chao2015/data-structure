@@ -3,7 +3,7 @@ package MySet;// Leetcode 804. Unique Morse Code Words
 
 import java.util.TreeSet;
 
-public class Solution {
+public class Solution804 {
 
     public int uniqueMorseRepresentations(String[] words) {
 
