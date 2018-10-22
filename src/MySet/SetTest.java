@@ -34,13 +34,19 @@ public class SetTest {
 
         BSTreeSet<String> bsTreeSet = new BSTreeSet<>();
         double time1 = testSet(bsTreeSet, filename);
-        System.out.println("BSTree Set: " + time1 + " s");  // 0.270615484 s
+        System.out.println("BSTree Set: " + time1 + " s");  // 0.198795405 s
 
         System.out.println();
 
         LinkedListSet<String> linkedListSet = new LinkedListSet<>();
         double time2 = testSet(linkedListSet, filename);
-        System.out.println("Linked List Set: " + time2 + " s");  // 3.058801204
+        System.out.println("Linked List Set: " + time2 + " s");  // 3.495857 s
+
+        System.out.println();
+
+        AVLSet<String> avlSet = new AVLSet<>();
+        double time3 = testSet(avlSet, filename);
+        System.out.println("AVL Tree Set: " + time3 + " s");  // 0.076843603 s
 
 
     }

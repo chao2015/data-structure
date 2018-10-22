@@ -41,12 +41,20 @@ public class MapTest {
 
         BSTreeMap<String, Integer> bsTreeMap = new BSTreeMap<>();
         double time1 = testMap(bsTreeMap, filename);
-        System.out.println("BST Map: " + time1 + " s");
+        System.out.println("BST Map: " + time1 + " s");  // 0.288221086 s
 
         System.out.println();
 
         LinkedListMap<String, Integer> linkedListMap = new LinkedListMap<>();
         double time2 = testMap(linkedListMap, filename);
-        System.out.println("Linked List Map: " + time2 + " s");
+        System.out.println("Linked List Map: " + time2 + " s");  // 12.361191784 s
+
+        System.out.println();
+
+        AVLMap<String, Integer> avlMap = new AVLMap<>();
+        double time3 = testMap(avlMap, filename);
+        System.out.println("AVL Tree Map: " + time3 + " s");  // 0.105127073 s
+
+
     }
 }
